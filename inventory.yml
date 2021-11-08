@@ -1,0 +1,14 @@
+---
+all:
+  children:
+     milan_pdc:
+         hosts:
+         vars:
+          ansible_ssh_user: hasitha
+          ansible_ssh_pass: Mobitel#123
+     london_pdc:
+         hosts:
+           192.168.8.103
+     london_sdc:
+         hosts:
+           

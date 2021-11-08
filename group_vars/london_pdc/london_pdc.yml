@@ -1,0 +1,4 @@
+---
+filename: london_pdc_txt
+ansible_ssh_user: hasitha
+ansible_ssh_pass: Mobitel#123
