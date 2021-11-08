@@ -3,7 +3,9 @@
    name: httpd
    state: present
   become: yes
+  when: ansible_distribution == "CentOS" 
 - name: start httpd service
+  tags: http_start
   service:
    name: httpd
    state: started
