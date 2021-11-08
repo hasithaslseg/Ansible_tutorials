@@ -1,0 +1,5 @@
+- name: Print Dic
+  ansible.builtin.shell:
+    chdir: /home/hasitha/Ansible_tutorials
+    cmd: mkdir test123
+

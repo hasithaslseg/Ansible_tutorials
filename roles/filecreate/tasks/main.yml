@@ -1,0 +1,9 @@
+- name: Print Dic
+  ansible.builtin.shell:
+    chdir: /home/hasitha/Ansible_tutorials
+    cmd: pwd > '{{ filename1 }}'
+- name: Print Dic
+  copy:
+    src: pwd1.txt
+    dest: /home/hasitha/
+    mode: 0777
