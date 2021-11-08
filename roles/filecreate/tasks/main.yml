@@ -1,9 +1,13 @@
-- name: Print Dic
-  ansible.builtin.shell:
-    chdir: /home/hasitha/Ansible_tutorials
-    cmd: pwd > '{{ filename1 }}'
-- name: Print Dic
-  copy:
-    src: pwd1.txt
-    dest: /home/hasitha/
-    mode: 0777
+- name: install httpd package
+  yum:
+   name: httpd
+   state: present
+  become: yes
+- name: start httpd service
+  service:
+   name: httpd
+   state: started
+   enabled: yes
+  become: yes
+
+

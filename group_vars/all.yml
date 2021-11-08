@@ -1,2 +1,3 @@
 ---
 filename1: pwd1.txt
+ansible_sudo_pass: Mobitel#123

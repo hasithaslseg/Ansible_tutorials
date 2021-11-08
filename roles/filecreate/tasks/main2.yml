@@ -1,0 +1,13 @@
+-name: install httpd package
+ tags: httpd
+ package:
+  name: httpd
+  state: latest
+-name: start httpd service
+ service:
+  name: httpd
+  state: started
+  enabled: yes
+
+
+
